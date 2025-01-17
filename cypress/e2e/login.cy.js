@@ -27,7 +27,7 @@ describe("Login", () => {
 
   //Teste de senha inválida
   it("Não deve logar com senha inválida", () => {
-    cy.login("papito@cyskills.com.br", "123456")
+    cy.login("papito@cyskills.com.br", "12345")
     cy.noticeHave("E-mail ou senha incorretos. Por favor, tente novamente!");
   });
 
